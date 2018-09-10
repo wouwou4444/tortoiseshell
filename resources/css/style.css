@@ -1,0 +1,288 @@
+
+html {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#banner {
+    display:flex;
+    width: 100;
+    background-image: url("../images/glasses-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#banner .container {
+    height: 30rem;
+    margin-top: 1rem;
+}
+
+/* header */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    font-size: 1rem;
+    background-color: cadetblue;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    height: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+}
+
+#logo span {
+    display: inline-flex;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 1rem 2rem 1rem 0;
+}
+
+.inf-480 {
+    display: none;
+}
+
+#main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: baseline;
+    justify-content: flex-end;
+    margin-left:  2rem;
+}
+
+#main .title {
+    background-color: white;
+    margin-top: 10rem;
+    
+}
+
+#main .title h1 {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.2;
+    padding: 1.5rem 5rem;
+}
+
+#services {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 3rem;
+    height: 8rem;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    height: 8rem;
+    align-items: center;
+    margin-right: 6rem;
+    width: 5rem;    
+    justify-content: space-between;
+}
+
+.service span {
+    text-align: center;
+}
+
+.paper img {
+    width: 3.5rem;
+}
+
+.ruler img, .truck img {
+    width: 5rem;
+}
+
+/* Principle section */
+
+#principles {
+    display: flex;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.principle {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+}
+
+.principle h3 {
+    
+    width: 10rem;
+    font-weight: bold;
+    padding: 0.5rem 0 0.5rem 1.25rem;
+    background-color: cadetblue;
+    color: white;
+}
+
+.principle p {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* Footer section */
+
+footer {
+    display: flex;
+    width: 100%;
+    background-color: azure;
+    margin-top: 5rem;
+}
+
+#copyright {
+    display: flex;
+    align-items: center;
+    
+}
+#copyright img {
+    padding: 4rem 1rem 4rem 4rem;
+
+    height: 1.5rem;
+}
+
+#copyright span {
+    display: inline-flex;
+}
+
+
+/* View  - 1024 */
+
+@media only screen and (max-width: 864px) {
+    .container {
+        width: 100%;
+    }
+
+    #banner {
+        margin-top: 0;
+        height: 22rem;
+    }
+
+    #main {
+        margin-left:  0;
+    }
+    #main .title {
+        margin-top: 5rem;
+        margin-right: 2rem;
+    }
+    
+    #main .title h1 {
+        font-size: 1.33rem;
+        padding: 0.75rem 4rem;
+    }
+
+    #principles, #services {
+        justify-content: space-around;
+    }
+
+    .service {
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .container {
+        width: 100%;
+    }
+
+    #banner {
+        height: 17rem;
+    }
+
+    #main .title {
+        margin-top: 9rem;
+        text-align: center;
+        margin-right: auto;
+        width: 100%;
+    }
+    
+    #main .title h1 {
+        text-align: center;
+        font-size: 1rem;
+        padding: 1rem 0;
+    }
+
+    .sup-480 {
+        display: none;
+    }
+
+    .inf-480 {
+        display: inline-block;
+    }
+
+    #content {
+        margin-top: 3.77rem;
+    }
+
+    #services {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.77rem;
+    }
+
+    .service {
+        margin-top: 1.54rem;
+    }
+
+    #principles {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .principle {
+        width:100%;
+        margin-top: 1rem;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .principle h3 {
+        width:100%;
+        text-align: center;
+    }
+
+    .principle p {
+        font-size: 0.77rem;
+        width: 100%;
+        margin-top: 1rem;
+        
+    }
+
+    .appointment {
+        margin-top: 4rem;
+    }
+}
+
+
